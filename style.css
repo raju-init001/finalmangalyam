@@ -1,0 +1,168 @@
+body {
+    font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4fb28f;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed; /* Make the navbar fixed to the top */
+    top: 0; 
+    width: 100%; 
+    z-index: 1; /* Ensure navbar is on top of other elements */
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh; 
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 78vh; 
+    background-color: rgba(0, 0, 0, 0.5); /* Add a slight overlay for better text contrast */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%; 
+    background-size: cover; /* Ensure image covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(5px); /* Apply a 5px blur effect */ 
+    
+}
+
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #4b0082; /* Indigo blue */ 
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff; /* Make heading white for better contrast */
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #fff; /* Make paragraph text white for better contrast */
+}
+
+.btn {
+    background-color: #fff; 
+    color: #4b0082; /* Indigo blue */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.welcome {
+    margin-top: 100px; 
+    text-align: center; /* Center the content if desired */
+    background: #fff;
+    color: #515654;
+}
+
+/* Services Section */
+.services {
+    margin-top: 20px;
+   text-align: center
+   
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 30px;
+
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    color: #515654; /* Set heading color to green */
+}
+
+.service p {
+    color: #515654; /* Set paragraph color to green */
+}
+
+/* About Section */
+.about {
+    margin-top: 50px;
+   display: flex; 
+  text-align: center;
+   background: #fff;
+   color: #515654;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
